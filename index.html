@@ -29,7 +29,111 @@
         h3 { font-size: 2rem; color: var(--color-gold); margin-bottom: 1rem; }
         .lead { font-size: 1.8rem; color: var(--color-blush); margin-bottom: 2rem; font-weight: 300; }
         p { font-size: 1.3rem; margin-bottom: 1.5rem; color: #e0e0e0; }
+        
+        <script src="https://cdn.tailwindcss.com"></script>
+<!-- ========== START: COMPARISON TABLE ========== -->
+<section class="comparison-section py-16 bg-gradient-to-b from-gray-900 to-black">
+  <div class="max-w-6xl mx-auto px-4">
+    <h2 class="text-center text-white text-3xl font-bold mb-12">THE AGONY MATRIX</h2>
+    
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+      
+      <!-- The OLD WAY Column -->
+      <div class="old-way bg-gradient-to-b from-red-900/20 to-transparent border-2 border-red-800/50 rounded-xl p-6 transform hover:scale-[1.01] transition-transform">
+        <div class="text-center mb-6">
+          <div class="inline-block bg-red-900 px-4 py-2 rounded-lg mb-2">
+            <span class="text-red-200 text-sm font-bold">THE OLD WAY</span>
+          </div>
+          <div class="text-gray-400 text-sm">(VE03, AGENCIES, "CREATORS")</div>
+        </div>
+        
+        <div class="space-y-4">
+          <div class="pain-point p-4 bg-black/50 rounded-lg border border-red-900/30">
+            <div class="text-red-400 text-lg font-bold">$5,000+ per video shoot</div>
+            <div class="text-gray-400 text-sm mt-1">Burned budget before first frame</div>
+          </div>
+          
+          <div class="pain-point p-4 bg-black/50 rounded-lg border border-red-900/30">
+            <div class="text-red-400 text-lg font-bold">2-3 week production delays</div>
+            <div class="text-gray-400 text-sm mt-1">Missed trends, lost opportunities</div>
+          </div>
+          
+          <div class="pain-point p-4 bg-black/50 rounded-lg border border-red-900/30">
+            <div class="text-red-400 text-lg font-bold">Generic, "obvious AI" look</div>
+            <div class="text-gray-400 text-sm mt-1">Audiences scroll past instantly</div>
+          </div>
+          
+          <div class="pain-point p-4 bg-black/50 rounded-lg border border-red-900/30">
+            <div class="text-red-400 text-lg font-bold">No brand control</div>
+            <div class="text-gray-400 text-sm mt-1">Every video looks different</div>
+          </div>
+          
+          <div class="pain-point p-4 bg-black/50 rounded-lg border border-red-900/30">
+            <div class="text-red-400 text-lg font-bold">Locked into their platform</div>
+            <div class="text-gray-400 text-sm mt-1">You're renting, not owning</div>
+          </div>
+          
+          <div class="result p-4 bg-red-900/30 rounded-lg mt-6">
+            <div class="text-red-200 text-center font-bold text-xl">Results? Unpredictable at best.</div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- The KAIRAH WAY Column -->
+      <div class="kairah-way bg-gradient-to-b from-green-900/20 to-transparent border-2 border-green-600 rounded-xl p-6 transform hover:scale-[1.01] transition-transform shadow-lg shadow-green-900/20">
+        <div class="text-center mb-6">
+          <div class="inline-block bg-green-800 px-4 py-2 rounded-lg mb-2">
+            <span class="text-green-200 text-sm font-bold">THE KAIRAH WAY</span>
+          </div>
+          <div class="text-gray-400 text-sm">Your unfair advantage</div>
+        </div>
+        
+        <div class="space-y-4">
+          <div class="benefit p-4 bg-black/50 rounded-lg border border-green-700/50">
+            <div class="text-green-400 text-lg font-bold">$0.00 cost per video</div>
+            <div class="text-gray-400 text-sm mt-1">Scale infinitely, profit immediately</div>
+          </div>
+          
+          <div class="benefit p-4 bg-black/50 rounded-lg border border-green-700/50">
+            <div class="text-green-400 text-lg font-bold">30-second generation time</div>
+            <div class="text-gray-400 text-sm mt-1">Test 100 ideas in an hour</div>
+          </div>
+          
+          <div class="benefit p-4 bg-black/50 rounded-lg border border-green-700/50">
+            <div class="text-green-400 text-lg font-bold">Hyper-realistic, cinematic quality</div>
+            <div class="text-gray-400 text-sm mt-1">Audiences stop scrolling, start buying</div>
+          </div>
+          
+          <div class="benefit p-4 bg-black/50 rounded-lg border border-green-700/50">
+            <div class="text-green-400 text-lg font-bold">Your branding, your rules</div>
+            <div class="text-gray-400 text-sm mt-1">Consistent identity across all content</div>
+          </div>
+          
+          <div class="benefit p-4 bg-black/50 rounded-lg border border-green-700/50">
+            <div class="text-green-400 text-lg font-bold">You own the software & traffic</div>
+            <div class="text-gray-400 text-sm mt-1">Build equity, not dependency</div>
+          </div>
+          
+          <div class="result p-4 bg-green-800/30 rounded-lg mt-6">
+            <div class="text-green-200 text-center font-bold text-xl">Results? A predictable money machine.</div>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+</section>
 
+<script>
+// Add subtle animation to benefits on scroll
+document.addEventListener('DOMContentLoaded', function() {
+  const benefits = document.querySelectorAll('.benefit');
+  benefits.forEach((benefit, index) => {
+    benefit.style.transitionDelay = `${index * 100}ms`;
+  });
+});
+</script>
+<!-- ========== END: COMPARISON TABLE ========== -->
         /* === AGGRESSIVE BUTTONS === */
         .btn-kairah {
             display: inline-block;
@@ -478,7 +582,93 @@
 
             <!-- RISK REVERSAL -->
             <div style="background:rgba(255,215,0,0.1); padding: 30px; border-radius:15px; margin: 40px 0;">
-                <h3><i class="fas fa-shield-alt"></i> YOUR 30-DAY "DOMINATION OR REFUND" GUARANTEE</h3>
+                <h3><i class="fas fa-shield-alt"></i> 
+                    <!-- ========== START: FAQ SECTION ========== -->
+<section class="faq-section py-16 bg-black">
+  <div class="max-w-4xl mx-auto px-4">
+    <h2 class="text-center text-white text-3xl font-bold mb-12">THE FINAL FAQ: OBJECTIONS DISMANTLED</h2>
+    
+    <div class="space-y-4">
+      
+      <!-- FAQ Item 1 -->
+      <div class="faq-item bg-gray-900 rounded-lg overflow-hidden border border-gray-800">
+        <button class="faq-question w-full text-left p-6 flex justify-between items-center hover:bg-gray-800 transition-colors">
+          <span class="text-white text-lg font-bold">Is this really 'unlimited' forever? What's the catch?</span>
+          <span class="text-red-500 text-2xl">+</span>
+        </button>
+        <div class="faq-answer hidden p-6 pt-0">
+          <div class="text-gray-300 bg-gray-800/50 p-4 rounded-lg border-l-4 border-green-500">
+            The catch is you get in now. This is a Founding Member launch to build our army of elite users. After these 500 spots are gone, Kairah Studio moves to a <span class="text-yellow-300 font-bold">$297/month subscription model</span>. You lock in lifetime access today. No recurring fees. Ever. This is how empires are built—by the visionary few who act before the crowd understands.
+          </div>
+        </div>
+      </div>
+      
+      <!-- FAQ Item 2 -->
+      <div class="faq-item bg-gray-900 rounded-lg overflow-hidden border border-gray-800">
+        <button class="faq-question w-full text-left p-6 flex justify-between items-center hover:bg-gray-800 transition-colors">
+          <span class="text-white text-lg font-bold">My clients demand Hollywood quality. Can this really replace my production team?</span>
+          <span class="text-red-500 text-2xl">+</span>
+        </button>
+        <div class="faq-answer hidden p-6 pt-0">
+          <div class="text-gray-300 bg-gray-800/50 p-4 rounded-lg border-l-4 border-green-500">
+            Your clients demand <span class="text-yellow-300 font-bold">results</span>. Hollywood quality at agency speed is the result. The case studies above replaced teams. The evidence is on this page. Your production team's render farm is now a text box. The question isn't about quality—it's about your willingness to wield the advantage that makes competitors obsolete.
+          </div>
+        </div>
+      </div>
+      
+      <!-- FAQ Item 3 -->
+      <div class="faq-item bg-gray-900 rounded-lg overflow-hidden border border-gray-800">
+        <button class="faq-question w-full text-left p-6 flex justify-between items-center hover:bg-gray-800 transition-colors">
+          <span class="text-white text-lg font-bold">I've been burned by AI tools before. They overpromise and underdeliver.</span>
+          <span class="text-red-500 text-2xl">+</span>
+        </button>
+        <div class="faq-answer hidden p-6 pt-0">
+          <div class="text-gray-300 bg-gray-800/50 p-4 rounded-lg border-l-4 border-green-500">
+            And you will be burned again if you keep using toys. This is not a 'tool.' This is a <span class="text-red-400 font-bold">weaponized platform</span>. We offer a 30-Day "Domination or Refund" Guarantee. Use it. Break it. Try to find its limits. If it does not become the core of your content engine within 30 days of launch, we will refund every penny. The risk is zero. The doubt is a luxury you cannot afford.
+          </div>
+        </div>
+      </div>
+      
+      <!-- FAQ Item 4 -->
+      <div class="faq-item bg-gray-900 rounded-lg overflow-hidden border border-gray-800">
+        <button class="faq-question w-full text-left p-6 flex justify-between items-center hover:bg-gray-800 transition-colors">
+          <span class="text-white text-lg font-bold">What if I don't know how to write good prompts?</span>
+          <span class="text-red-500 text-2xl">+</span>
+        </button>
+        <div class="faq-answer hidden p-6 pt-0">
+          <div class="text-gray-300 bg-gray-800/50 p-4 rounded-lg border-l-4 border-green-500">
+            You don't need to. Founding Members receive access to the <span class="text-yellow-300 font-bold">Vault</span>—a locked library of proven, high-converting prompt templates for every use case (product launches, brand films, social ads). We don't give you a blank page; we give you the exact keys that unlocked the results on this page.
+          </div>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+</section>
+
+<script>
+// FAQ Toggle Functionality
+document.querySelectorAll('.faq-question').forEach(button => {
+  button.addEventListener('click', () => {
+    const answer = button.nextElementSibling;
+    const plusMinus = button.querySelector('span:last-child');
+    
+    // Toggle current FAQ
+    answer.classList.toggle('hidden');
+    plusMinus.textContent = plusMinus.textContent === '+' ? '−' : '+';
+    
+    // Optional: Close other FAQs
+    // document.querySelectorAll('.faq-answer').forEach(otherAnswer => {
+    //   if (otherAnswer !== answer) {
+    //     otherAnswer.classList.add('hidden');
+    //     otherAnswer.previousElementSibling.querySelector('span:last-child').textContent = '+';
+    //   }
+    // });
+  });
+});
+</script>
+<!-- ========== END: FAQ SECTION ========== -->
+                    YOUR 30-DAY "DOMINATION OR REFUND" GUARANTEE</h3>
                 <p>We are so confident this will become the core of your marketing engine that we offer an ironclad guarantee:</p>
                 <p><strong>Use Kairah Studio for 30 days after launch. If it does not become the most powerful tool in your arsenal, if it does not give you a clear edge, simply email us. We will refund every single penny. No questions, no hassles.</strong></p>
                 <p>Your risk is zero. Your potential upside is unlimited.</p>
