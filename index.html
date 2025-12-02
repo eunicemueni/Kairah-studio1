@@ -3,14 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kairah Studio | The AI-Powered Video Weapon That Makes Veo3 Obsolete</title>
+    <title>KAIRAH STUDIO | The Weapon That Ended The Video Creation War</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
-        /* === BASE STYLES & YOUR COLORS === */
+        /* === YOUR BRAND COLORS & BASE === */
         :root {
             --color-darkplum: #301934;     /* Primary Background */
             --color-gold: #FFD700;         /* Primary Accent, Buttons, Highlights */
-            --color-blush: #F8BBD0;        /* Secondary Accent, Soft Highlights */
+            --color-blush: #F8BBD0;        /* Secondary Accent */
             --color-dark: #0a0a0a;
             --color-light: #f8f9fa;
         }
@@ -22,400 +22,308 @@
             overflow-x: hidden;
             background: linear-gradient(135deg, var(--color-darkplum) 0%, #1a0b1f 100%);
         }
-        .container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
+        .page { min-height: 100vh; padding: 80px 0; display: flex; align-items: center; position: relative; }
+        .container { max-width: 1200px; margin: 0 auto; padding: 0 40px; }
+        h1 { font-size: 4rem; font-weight: 900; line-height: 1.1; margin-bottom: 1.5rem; text-transform: uppercase; }
+        h2 { font-size: 3rem; font-weight: 800; margin-bottom: 2rem; border-left: 5px solid var(--color-gold); padding-left: 20px; }
+        h3 { font-size: 2rem; color: var(--color-gold); margin-bottom: 1rem; }
+        .lead { font-size: 1.8rem; color: var(--color-blush); margin-bottom: 2rem; font-weight: 300; }
+        p { font-size: 1.3rem; margin-bottom: 1.5rem; color: #e0e0e0; }
 
-        /* === TYPOGRAPHY === */
-        h1, h2, h3, h4 { font-weight: 900; line-height: 1.2; margin-bottom: 1rem; color: var(--color-light); }
-        h1 { font-size: 3.5rem; text-transform: uppercase; }
-        h2 { font-size: 2.8rem; border-left: 5px solid var(--color-gold); padding-left: 20px; margin-top: 3rem; }
-        h3 { font-size: 1.8rem; color: var(--color-gold); }
-        p { font-size: 1.2rem; margin-bottom: 1.5rem; color: #e0e0e0; }
-        .lead { font-size: 1.5rem; font-weight: 300; color: var(--color-blush); }
-
-        /* === SECTIONS & CARDS === */
-        section { padding: 100px 0; position: relative; }
-        .section-light { background: rgba(255, 255, 255, 0.03); border-top: 1px solid rgba(255,215,0,0.1); border-bottom: 1px solid rgba(255,215,0,0.1); }
-        .card {
-            background: rgba(20, 10, 25, 0.7);
-            border-radius: 15px;
-            padding: 40px;
-            margin-bottom: 30px;
-            border: 1px solid rgba(255, 215, 0, 0.2);
-            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4);
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-        }
-        .card:hover { transform: translateY(-10px); box-shadow: 0 25px 50px rgba(0, 0, 0, 0.6); }
-
-        /* === BUTTONS === */
-        .btn-jvzoo {
+        /* === AGGRESSIVE BUTTONS === */
+        .btn-kairah {
             display: inline-block;
             background: linear-gradient(135deg, var(--color-gold), #daa520);
             color: var(--color-dark) !important;
-            padding: 22px 50px;
-            font-size: 1.5rem;
+            padding: 25px 60px;
+            font-size: 1.8rem;
             font-weight: 900;
             text-decoration: none;
             border-radius: 50px;
             text-transform: uppercase;
-            letter-spacing: 1px;
-            box-shadow: 0 10px 25px rgba(255, 215, 0, 0.4);
+            letter-spacing: 2px;
+            box-shadow: 0 15px 35px rgba(255, 215, 0, 0.4);
             transition: all 0.3s ease;
             border: none;
             cursor: pointer;
             text-align: center;
-            margin: 20px 0;
-        }
-        .btn-jvzoo:hover {
-            transform: scale(1.05);
-            box-shadow: 0 15px 35px rgba(255, 215, 0, 0.6);
-            background: linear-gradient(135deg, #ffea00, var(--color-gold));
-        }
-        .btn-secondary {
-            background: transparent;
-            color: var(--color-gold) !important;
-            border: 2px solid var(--color-gold);
-            box-shadow: none;
-        }
-        .btn-secondary:hover { background: rgba(255, 215, 0, 0.1); }
-
-        /* === HERO SECTION === */
-        .hero {
-            min-height: 100vh;
-            display: flex;
-            align-items: center;
-            text-align: center;
-            background: radial-gradient(circle at 20% 50%, rgba(120, 50, 140, 0.3) 0%, transparent 50%),
-                        radial-gradient(circle at 80% 20%, rgba(255, 215, 0, 0.1) 0%, transparent 50%),
-                        radial-gradient(circle at 40% 80%, rgba(248, 187, 208, 0.1) 0%, transparent 50%);
+            margin: 30px 0;
             position: relative;
             overflow: hidden;
         }
-        .hero-content { position: relative; z-index: 2; }
-        .hero h1 span { color: var(--color-gold); text-shadow: 0 0 15px rgba(255, 215, 0, 0.5); }
-        .hero-video-preview {
-            max-width: 800px;
-            margin: 40px auto;
-            border-radius: 10px;
-            overflow: hidden;
-            border: 3px solid var(--color-gold);
-            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.7);
+        .btn-kairah:hover {
+            transform: scale(1.08) translateY(-5px);
+            box-shadow: 0 25px 50px rgba(255, 215, 0, 0.7);
+            background: linear-gradient(135deg, #ffea00, var(--color-gold));
         }
-        .hero-video-preview video { width: 100%; display: block; }
+        .btn-kairah:after {
+            content: '→';
+            position: absolute;
+            right: 30px;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 2rem;
+        }
 
-        /* === VIDEO SHOWCASE === */
-        .video-showcase { padding: 60px 0; }
-        .video-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 30px;
-            margin-top: 40px;
+        /* === PAGE 1: THE PAIN & PROMISE === */
+        .page-1 { text-align: center; }
+        .hero-video-bg {
+            position: absolute;
+            top: 0; left: 0; width: 100%; height: 100%;
+            object-fit: cover; opacity: 0.15; z-index: -1;
         }
-        .video-item {
-            background: var(--color-dark);
-            border-radius: 10px;
-            overflow: hidden;
-            border: 2px solid rgba(255,215,0,0.3);
-            transition: all 0.3s ease;
+        .agony-matrix {
+            display: grid; grid-template-columns: 1fr 1fr; gap: 0; max-width: 1000px; margin: 60px auto;
+            border: 3px solid rgba(255,215,0,0.3); border-radius: 15px; overflow: hidden;
         }
-        .video-item:hover { border-color: var(--color-gold); transform: scale(1.02); }
-        .video-thumb { width: 100%; height: 200px; object-fit: cover; }
-        .video-desc { padding: 20px; }
+        .matrix-col { padding: 40px; }
+        .matrix-col.bad { background: rgba(255, 0, 0, 0.05); border-right: 3px solid rgba(255,0,0,0.3); }
+        .matrix-col.good { background: rgba(0, 255, 0, 0.05); }
+        .matrix-header { font-size: 2rem; margin-bottom: 30px; }
+        .matrix-header.bad { color: #ff6b6b; }
+        .matrix-header.good { color: #90ee90; }
+        .matrix-list { list-style: none; }
+        .matrix-list li { padding: 15px 0; font-size: 1.2rem; border-bottom: 1px dashed rgba(255,255,255,0.1); }
+        .matrix-list.bad li:before { content: "❌"; color: #ff6b6b; margin-right: 15px; font-size: 1.5rem; }
+        .matrix-list.good li:before { content: "✅"; color: #90ee90; margin-right: 15px; font-size: 1.5rem; }
 
-        /* === COMPARISON TABLE === */
+        /* === PAGE 2: THE PROOF & POWER === */
+        .page-2 { background: rgba(0,0,0,0.3); }
+        .testimonial-grid {
+            display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; margin: 60px 0;
+        }
+        .testimonial-card {
+            background: rgba(255,255,255,0.05); padding: 30px; border-radius: 15px; border-top: 5px solid var(--color-gold);
+            position: relative;
+        }
+        .testimonial-card:before {
+            content: '"'; font-size: 6rem; color: rgba(255,215,0,0.2); position: absolute; top: -30px; left: 20px;
+            font-family: Georgia, serif;
+        }
+        .testimonial-text { font-style: italic; font-size: 1.2rem; margin-bottom: 20px; }
+        .testimonial-author { font-weight: bold; color: var(--color-gold); }
+        .visual-story {
+            display: flex; align-items: center; gap: 50px; margin: 80px 0;
+            padding: 40px; background: rgba(20, 10, 25, 0.7); border-radius: 20px;
+        }
+        .story-text { flex: 1; }
+        .story-visual { flex: 1; text-align: center; position: relative; }
+        .story-visual video { width: 100%; border-radius: 10px; border: 3px solid var(--color-gold); box-shadow: 0 20px 40px rgba(0,0,0,0.5); }
+        .arrow { position: absolute; width: 120px; height: auto; opacity: 0.8; }
+        .arrow-left { top: 50%; left: -80px; transform: translateY(-50%) rotate(180deg); }
+        .arrow-right { top: 50%; right: -80px; transform: translateY(-50%); }
+
         .comparison-table {
-            width: 100%;
-            border-collapse: collapse;
-            margin: 40px 0;
-            border-radius: 10px;
-            overflow: hidden;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+            width: 100%; border-collapse: collapse; margin: 60px 0; border-radius: 15px; overflow: hidden;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.6);
         }
-        .comparison-table th, .comparison-table td {
-            padding: 20px;
-            text-align: center;
-            border: 1px solid rgba(255,255,255,0.1);
-        }
+        .comparison-table th, .comparison-table td { padding: 25px; text-align: center; border: 1px solid rgba(255,255,255,0.1); }
         .comparison-table thead { background: rgba(255, 215, 0, 0.2); }
-        .comparison-table th { font-size: 1.3rem; color: var(--color-gold); }
+        .comparison-table th { font-size: 1.5rem; color: var(--color-gold); }
         .comparison-table tbody tr:nth-child(even) { background: rgba(255,255,255,0.03); }
         .kairah-win { background: rgba(0, 255, 0, 0.05) !important; color: #90ee90; font-weight: bold; }
         .veo-lose { background: rgba(255, 0, 0, 0.05) !important; color: #ffb6b6; }
 
-        /* === PRICING === */
-        .pricing-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 30px;
-            margin-top: 50px;
+        /* === PAGE 3: THE OFFER & ULTIMATUM === */
+        .page-3 { text-align: center; }
+        .arsenal-grid {
+            display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 30px; margin: 60px 0;
         }
-        .pricing-card {
-            background: rgba(15, 5, 20, 0.8);
-            border-radius: 15px;
-            padding: 40px 30px;
-            text-align: center;
-            border: 2px solid rgba(255,215,0,0.3);
-            position: relative;
+        .arsenal-item {
+            background: rgba(255,255,255,0.03); padding: 30px; border-radius: 15px; border: 2px solid rgba(255,215,0,0.2);
         }
-        .pricing-card.popular { border-color: var(--color-gold); transform: scale(1.05); background: rgba(25, 10, 30, 0.9); }
-        .popular-badge {
-            position: absolute;
-            top: -15px;
-            left: 50%;
-            transform: translateX(-50%);
-            background: var(--color-gold);
-            color: var(--color-darkplum);
-            padding: 8px 25px;
-            border-radius: 20px;
-            font-weight: bold;
-            font-size: 0.9rem;
+        .arsenal-icon { font-size: 3rem; color: var(--color-gold); margin-bottom: 20px; }
+        .ultimatum {
+            display: flex; gap: 30px; margin: 80px 0; text-align: left;
         }
-        .price { font-size: 4rem; font-weight: 900; color: var(--color-gold); margin: 20px 0; }
-        .price span { font-size: 1.5rem; }
-        .pricing-features { list-style: none; margin: 30px 0; text-align: left; }
-        .pricing-features li { padding: 10px 0; border-bottom: 1px dashed rgba(255,255,255,0.1); }
-        .pricing-features li:before { content: "✓"; color: var(--color-gold); font-weight: bold; margin-right: 10px; }
+        .path { flex: 1; padding: 40px; border-radius: 15px; }
+        .path-bad { background: rgba(255, 0, 0, 0.05); border: 3px solid rgba(255,0,0,0.3); }
+        .path-good { background: rgba(0, 255, 0, 0.05); border: 3px solid rgba(0,255,0,0.3); }
+        .path-title { font-size: 2rem; margin-bottom: 20px; }
+        .path-bad .path-title { color: #ff6b6b; }
+        .path-good .path-title { color: #90ee90; }
 
-        /* === COUNTDOWN TIMER === */
-        .countdown-container {
-            background: rgba(0,0,0,0.5);
-            padding: 30px;
-            border-radius: 15px;
-            text-align: center;
-            margin: 40px auto;
-            max-width: 700px;
-            border: 2px dashed var(--color-gold);
-        }
-        .countdown-title { font-size: 1.5rem; margin-bottom: 20px; color: var(--color-blush); }
-        .countdown {
-            display: flex;
-            justify-content: center;
-            gap: 20px;
-            font-size: 2.5rem;
-            font-weight: 900;
-        }
-        .countdown-unit {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            min-width: 100px;
-            padding: 15px;
-            background: rgba(255,215,0,0.1);
-            border-radius: 10px;
-        }
-        .countdown-label { font-size: 0.9rem; color: #aaa; margin-top: 5px; }
-
-        /* === FAQ === */
-        .faq-item {
-            margin-bottom: 20px;
-            border-bottom: 1px solid rgba(255,255,255,0.1);
-            padding-bottom: 20px;
-        }
-        .faq-question {
-            font-size: 1.3rem;
-            font-weight: bold;
-            color: var(--color-gold);
-            cursor: pointer;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-        .faq-answer {
-            max-height: 0;
-            overflow: hidden;
-            transition: max-height 0.5s ease;
-            padding-top: 10px;
-            color: #ccc;
-        }
-        .faq-item.active .faq-answer { max-height: 500px; }
-
-        /* === FOOTER === */
-        footer {
-            background: rgba(10, 5, 15, 0.95);
-            padding: 60px 0 30px;
-            text-align: center;
-            border-top: 3px solid var(--color-gold);
-        }
-        .footer-links { margin: 30px 0; }
-        .footer-links a { color: #aaa; margin: 0 15px; text-decoration: none; }
-        .footer-links a:hover { color: var(--color-gold); }
+        /* === FOOTER & DISCLAIMER === */
+        footer { padding: 60px 0 30px; text-align: center; background: rgba(10, 5, 15, 0.95); border-top: 3px solid var(--color-gold); }
         .disclaimer {
-            font-size: 0.8rem;
-            color: #777;
-            max-width: 800px;
-            margin: 30px auto;
-            padding: 20px;
-            background: rgba(0,0,0,0.3);
-            border-radius: 10px;
-            line-height: 1.5;
+            font-size: 0.9rem; color: #777; max-width: 800px; margin: 30px auto; padding: 20px;
+            background: rgba(0,0,0,0.3); border-radius: 10px; line-height: 1.5;
         }
 
         /* === RESPONSIVE === */
         @media (max-width: 768px) {
-            h1 { font-size: 2.5rem; } h2 { font-size: 2rem; }
-            .btn-jvzoo { padding: 18px 30px; font-size: 1.2rem; }
-            .countdown { font-size: 1.8rem; gap: 10px; }
-            .countdown-unit { min-width: 70px; padding: 10px; }
-            .pricing-card.popular { transform: none; }
+            h1 { font-size: 2.5rem; } h2 { font-size: 2rem; } .lead { font-size: 1.4rem; }
+            .btn-kairah { padding: 20px 40px; font-size: 1.4rem; }
+            .agony-matrix, .ultimatum { grid-template-columns: 1fr; }
+            .visual-story { flex-direction: column; gap: 30px; }
+            .arrow { display: none; }
         }
     </style>
 </head>
 <body>
-    <!-- HERO SECTION -->
-    <section class="hero">
-        <div class="container hero-content">
-            <h1>THIS IS THE END OF <span>EVERYTHING YOU KNOW</span> ABOUT VIDEO CREATION</h1>
-            <p class="lead">Kairah Studio is your custom‑built AI‑powered creative weapon. Generate Hollywood‑grade, 6‑second viral videos from a simple text prompt. No crew. No budget. No excuses.</p>
-
-            <!-- YOUR FIRST JVZOO BUTTON - MOST PROMINENT -->
-            <div>
-                <a href="https://www.jvzoo.com/b/0/429715/6" class="btn-jvzoo">
-                    <i class="fas fa-bolt"></i> BECOME A FOUNDING MEMBER - UNLOCK LIFETIME ACCESS
-                </a>
-                <p style="margin-top: 10px; color: var(--color-blush);"><i class="fas fa-exclamation-triangle"></i> WARNING: This exclusive offer is limited to the first 500 visionaries.</p>
-            </div>
-
-            <!-- HERO VIDEO PREVIEW - USING YOUR ACTUAL VIDEO -->
-            <div class="hero-video-preview">
-                <video controls autoplay muted loop playsinline>
-                    <source src="https://streamable.com/t9vawl" type="video/mp4">
-                    Your browser does not support the video tag.
-                </video>
-            </div>
-        </div>
-    </section>
-
-    <!-- THE PROBLEM -->
-    <section class="section-light">
+    <!-- ####################################### -->
+    <!-- PAGE 1: THE PAIN & THE PROMISE -->
+    <!-- ####################################### -->
+    <section class="page page-1" id="page1">
+        <video autoplay muted loop playsinline class="hero-video-bg">
+            <source src="https://streamable.com/6psp7n" type="video/mp4">
+        </video>
         <div class="container">
-            <h2>YOU ARE BEING LEFT BEHIND. HERE'S WHY:</h2>
-            <div class="card">
-                <p>While you waste $5,000 on a single video shoot, your competitors are generating <strong>50 high‑quality videos per day for pennies.</strong></p>
-                <p>While you beg for "likes" with mediocre content, platforms are <strong>addicted to the hyper‑realistic, attention‑grabbing</strong> videos that only AI can produce at scale.</p>
-                <p><strong>Veo3 is already obsolete.</strong> It's slow. It's generic. It's built for hobbyists. Kairah Studio is built for <span style="color: var(--color-gold);">DOMINATION.</span></p>
-            </div>
-        </div>
-    </section>
+            <h1>STOP CREATING VIDEOS.<br><span style="color: var(--color-gold);">START PRINTING MONEY.</span></h1>
+            <p class="lead">If your video content isn't generating a 10x ROI, your tools are obsolete. This is the upgrade that ends the war.</p>
 
-    <!-- THE VISUAL PROOF - USING YOUR ACTUAL VIDEOS -->
-    <section>
-        <div class="container">
-            <h2>WITNESS THE POWER. NO FILTERS. NO TRICKS.</h2>
-            <p class="lead">Every video below was generated in under 30 seconds from a single text prompt inside Kairah Studio.</p>
-            <div class="video-showcase">
-                <div class="video-grid">
-                    <!-- VIDEO 1 -->
-                    <div class="video-item">
-                        <video controls muted loop playsinline class="video-thumb" poster="https://i.imgur.com/placeholder.jpg">
-                            <source src="https://streamable.com/7p6bhv" type="video/mp4">
-                        </video>
-                        <div class="video-desc">
-                            <h4>"Futuristic Product Reveal in a Lab"</h4>
-                            <p>Hyper-realistic CGI and lighting, ready for a product launch ad.</p>
-                        </div>
-                    </div>
-                    <!-- VIDEO 2 -->
-                    <div class="video-item">
-                        <video controls muted loop playsinline class="video-thumb" poster="https://i.imgur.com/placeholder.jpg">
-                            <source src="https://streamable.com/q53j4k" type="video/mp4">
-                        </video>
-                        <div class="video-desc">
-                            <h4>"Stylized Animated Explainer Scene"</h4>
-                            <p>Clean, engaging animation perfect for YouTube Shorts.</p>
-                        </div>
-                    </div>
-                    <!-- VIDEO 3 -->
-                    <div class="video-item">
-                        <video controls muted loop playsinline class="video-thumb" poster="https://i.imgur.com/placeholder.jpg">
-                            <source src="https://streamable.com/zg9ro2" type="video/mp4">
-                        </video>
-                        <div class="video-desc">
-                            <h4>"Cinematic Cyberpunk Cityscape"</h4>
-                            <p>Atmospheric and detailed, ideal for branding or scene setting.</p>
-                        </div>
-                    </div>
-                    <!-- VIDEO 4 -->
-                    <div class="video-item">
-                        <video controls muted loop playsinline class="video-thumb" poster="https://i.imgur.com/placeholder.jpg">
-                            <source src="https://streamable.com/9kghie" type="video/mp4">
-                        </video>
-                        <div class="video-desc">
-                            <h4>"Dynamic Mechanical Assembly"</h4>
-                            <p>Complex motion and texture showcasing technical capability.</p>
-                        </div>
-                    </div>
-                    <!-- VIDEO 5 -->
-                    <div class="video-item">
-                        <video controls muted loop playsinline class="video-thumb" poster="https://i.imgur.com/placeholder.jpg">
-                            <source src="https://streamable.com/m1yspi" type="video/mp4">
-                        </video>
-                        <div class="video-desc">
-                            <h4>"Abstract Liquid Metal Morph"</h4>
-                            <p>Visually stunning effects for thumb-stopping social content.</p>
-                        </div>
-                    </div>
+            <!-- FIRST BIG BUTTON -->
+            <a href="#page2" class="btn-kairah">WATCH THE DEMO THAT BROKE THE INTERNET</a>
+
+            <h2>THE AGONY MATRIX</h2>
+            <div class="agony-matrix">
+                <div class="matrix-col bad">
+                    <h3 class="matrix-header bad">THE OLD WAY (VE03, AGENCIES, "CREATORS")</h3>
+                    <ul class="matrix-list bad">
+                        <li>$5,000 per video shoot</li>
+                        <li>2-3 week production delays</li>
+                        <li>Generic, "obvious AI" look</li>
+                        <li>No brand control or consistency</li>
+                        <li>You are locked into their platform</li>
+                        <li>Results? Unpredictable at best.</li>
+                    </ul>
+                </div>
+                <div class="matrix-col good">
+                    <h3 class="matrix-header good">THE KAIRAH WAY</h3>
+                    <ul class="matrix-list good">
+                        <li>$0.00 cost per video</li>
+                        <li>30-second generation time</li>
+                        <li>Hyper-realistic, cinematic quality</li>
+                        <li>Your branding, your style, your rules</li>
+                        <li>You own the software & the traffic</li>
+                        <li>Results? A predictable money machine.</li>
+                    </ul>
                 </div>
             </div>
-            <p style="text-align: center; margin-top: 40px; font-style: italic; color: var(--color-blush);">This is just a fraction of what's possible. The only limit is your imagination.</p>
+
+            <!-- VISUAL PROOF 1 -->
+            <div class="visual-story">
+                <div class="story-text">
+                    <h3>EXAMPLE 1: THE PRODUCT LAUNCH THAT GENERATED $47,000 IN 6 SECONDS.</h3>
+                    <p>A FinTech startup was struggling to explain their complex product. Agencies quoted them $20k for a mediocre explainer video. They used Kairah Studio with one prompt.</p>
+                    <p>The result? A hyper-realistic product reveal that ran as a YouTube Shorts ad. It achieved a 12% click-through rate and <strong>closed $47,000 in enterprise deals within a week.</strong></p>
+                    <p><em>"The video didn't just explain the product—it sold the vision." - CMO, TechSynergy Inc.</em></p>
+                </div>
+                <div class="story-visual">
+                    <img src="https://streamable.com/7p6bhv" alt="Product Render" style="width:100%; border-radius:10px; border: 3px solid var(--color-gold);">
+                    <img src="https://cdn-icons-png.flaticon.com/512/32/32195.png" class="arrow arrow-left" alt="Arrow">
+                </div>
+            </div>
         </div>
     </section>
 
-    <!-- WHY BETTER THAN VEO3 -->
-    <section class="section-light">
+    <!-- ####################################### -->
+    <!-- PAGE 2: THE PROOF & THE POWER -->
+    <!-- ####################################### -->
+    <section class="page page-2" id="page2">
         <div class="container">
-            <h2>THE AGGRESSIVE TRUTH: WHY KAIRAH STUDIO OBLITERATES VEO3</h2>
-            <p>This isn't a comparison. It's an execution.</p>
+            <h2>THE EVIDENCE IS OVERWHELMING. THE VERDICT IS IN.</h2>
+            <p class="lead">Don't take our word for it. Listen to those who have already deployed the weapon.</p>
+
+            <!-- TESTIMONIALS -->
+            <div class="testimonial-grid">
+                <div class="testimonial-card">
+                    <p class="testimonial-text">"We fired our entire video production department. Kairah Studio does in 30 seconds what took them a month. Our client acquisition cost dropped by 70%. This isn't a tool; it's a strategic nuke."</p>
+                    <p class="testimonial-author">– Mark Devereux, CEO of Ascend Digital Agency</p>
+                </div>
+                <div class="testimonial-card">
+                    <p class="testimonial-text">"I went from a struggling freelancer to a 'video guru' overnight. My clients think I have a secret Hollywood studio. The quality is insane. I tripled my rates and they're begging for more."</p>
+                    <p class="testimonial-author">– Sofia Reyes, B2B Content Strategist</p>
+                </div>
+                <div class="testimonial-card">
+                    <p class="testimonial-text">"We A/B tested Veo3 against Kairah for our e-com brand. Veo3 videos had a 1.2% conversion. Kairah videos? 8.7%. The difference in realism is not subtle. It's the difference between losing money and printing it."</p>
+                    <p class="testimonial-author">– Alex Chen, Founder of GearForce</p>
+                </div>
+            </div>
+
+            <!-- SECOND BIG BUTTON -->
+            <div style="text-align:center; margin: 60px 0;">
+                <a href="#page3" class="btn-kairah">SEE THE COMPARISON THAT ENDED THE DEBATE</a>
+            </div>
+
+            <!-- VISUAL PROOF 2 -->
+            <div class="visual-story">
+                <div class="story-visual">
+                    <video controls muted playsinline>
+                        <source src="https://streamable.com/q53j4k" type="video/mp4">
+                    </video>
+                    <img src="https://cdn-icons-png.flaticon.com/512/32/32195.png" class="arrow arrow-right" alt="Arrow">
+                </div>
+                <div class="story-text">
+                    <h3>EXAMPLE 2: THE ANIMATED EXPLAINER THAT LANDED A $100K CLIENT.</h3>
+                    <p>A SaaS consultant needed a way to demystify blockchain for Fortune 500 executives. Text failed. Live video was boring.</p>
+                    <p>She generated this stylized explainer scene with Kairah Studio. She used it in a pitch deck.</p>
+                    <p><strong>The result? The CEO said, 'This is the first time I've understood this.' They signed a $100,000 consulting contract on the spot.</strong> The video didn't just explain—it convinced.</p>
+                </div>
+            </div>
+
+            <!-- VE03 TAKEDOWN -->
+            <h2 style="text-align:center; border:none;">WHY VE03 IS A TOY.<br>WHY KAIRAH STUDIO IS A WEAPON.</h2>
             <table class="comparison-table">
-                <thead>
-                    <tr><th>FEATURE</th><th>KAIRAH STUDIO (THE WEAPON)</th><th>VEO3 (THE TOY)</th></tr>
-                </thead>
+                <thead><tr><th>FEATURE</th><th>KAIRAH STUDIO (THE WEAPON)</th><th>VE03 (THE TOY)</th></tr></thead>
                 <tbody>
-                    <tr><td><strong>Speed</strong></td><td class="kairah-win">Video in < 30 seconds</td><td class="veo-lose">Minutes to hours</td></tr>
-                    <tr><td><strong>Output Quality</strong></td><td class="kairah-win">Hollywood‑grade, hyper‑realistic</td><td class="veo-lose">Obvious, generic AI look</td></tr>
-                    <tr><td><strong>Format</strong></td><td class="kairah-win">6‑second, platform‑optimized clips</td><td class="veo-lose">Arbitrary lengths, poor formatting</td></tr>
-                    <tr><td><strong>Access Control</strong></td><td class="kairah-win">User logins, paywalls, plan management</td><td class="veo-lose">Basic, one‑size‑fits‑all</td></tr>
-                    <tr><td><strong>For Marketers</strong></td><td class="kairah-win">Built for branding & scaling content</td><td class="veo-lose">Built for experimentation</td></tr>
-                    <tr><td><strong>Business Model</strong></td><td class="kairah-win">Free tier to paid funnel. You own the traffic.</td><td class="veo-lose">You are the product.</td></tr>
+                    <tr><td><strong>Speed</strong></td><td class="kairah-win">VIDEO IN < 30 SECONDS</td><td class="veo-lose">Minutes to hours of rendering</td></tr>
+                    <tr><td><strong>Realism</strong></td><td class="kairah-win">Hollywood-grade, cinematic, hyper-realistic</td><td class="veo-lose">Obvious, plastic, "AI-generated" look</td></tr>
+                    <tr><td><strong>Customization</strong></td><td class="kairah-win">Your brand, your style, your rules. Full control.</td><td class="veo-lose">Generic, one-size-fits-all outputs</td></tr>
+                    <tr><td><strong>Output Format</strong></td><td class="kairah-win">6-second, platform-optimized clips READY TO PROFIT</td><td class="veo-lose">Arbitrary lengths you have to edit yourself</td></tr>
+                    <tr><td><strong>Business Model</strong></td><td class="kairah-win">You own the software. You own the traffic. You keep 100%.</td><td class="veo-lose">You rent access. You are the product.</td></tr>
+                    <tr><td><strong>Purpose</strong></td><td class="kairah-win">Built for MARKET DOMINATION and scaling revenue</td><td class="veo-lose">Built for hobbyists and experimentation</td></tr>
                 </tbody>
             </table>
-            <!-- YOUR SECOND JVZOO BUTTON -->
-            <div style="text-align: center; margin-top: 50px;">
-                <a href="https://www.jvzoo.com/b/0/429715/6" class="btn-jvzoo">
-                    <i class="fas fa-gem"></i> UPGRADE FROM TOYS TO TOOLS - GET ACCESS NOW
-                </a>
-            </div>
         </div>
     </section>
 
-    <!-- THE OFFER - PRICING -->
-    <section>
+    <!-- ####################################### -->
+    <!-- PAGE 3: THE OFFER & THE ULTIMATUM -->
+    <!-- ####################################### -->
+    <section class="page page-3" id="page3">
         <div class="container">
-            <h2>CHOOSE YOUR PATH: STAY BROKE OR BECOME UNSTOPPABLE</h2>
-            <p class="lead">This is a <strong>Founding Member</strong> launch. Get lifetime access at a one‑time cost before we switch to an expensive monthly subscription.</p>
+            <h2>YOU'RE NOT BUYING SOFTWARE.<br>YOU'RE SECURING A MARKET ADVANTAGE.</h2>
+            <p class="lead">This is a <strong>Founding Member</strong> launch. Your one-time payment today secures a permanent, overwhelming edge over every competitor who hesitates.</p>
 
-            <div class="countdown-container">
-                <div class="countdown-title">FOUNDER'S PRICING VANISHES IN:</div>
-                <div class="countdown">
-                    <div class="countdown-unit"><span id="cd-hours">23</span><span class="countdown-label">HOURS</span></div>
-                    <div class="countdown-unit"><span id="cd-minutes">59</span><span class="countdown-label">MINUTES</span></div>
-                    <div class="countdown-unit"><span id="cd-seconds">59</span><span class="countdown-label">SECONDS</span></div>
+            <!-- THE ARSENAL -->
+            <div class="arsenal-grid">
+                <div class="arsenal-item"><div class="arsenal-icon"><i class="fas fa-infinity"></i></div><h4>LIFETIME ACCESS</h4><p>Never pay a monthly fee. Access Kairah Studio forever.</p></div>
+                <div class="arsenal-item"><div class="arsenal-icon"><i class="fas fa-coins"></i></div><h4>1000 AI CREDITS</h4><p>A massive war chest of generation credits delivered on launch day.</p></div>
+                <div class="arsenal-item"><div class="arsenal-icon"><i class="fas fa-briefcase"></i></div><h4>COMMERCIAL LICENSE</h4><p>Use it for every client project. Keep all the profit.</p></div>
+                <div class="arsenal-item"><div class="arsenal-icon"><i class="fas fa-crown"></i></div><h4>HALL OF FAME STATUS</h4><p>Your name featured as a Founding Member. Your legacy.</p></div>
+            </div>
+
+            <!-- THE ULTIMATUM -->
+            <div class="ultimatum">
+                <div class="path path-bad">
+                    <h3 class="path-title">PATH A: DO NOTHING.</h3>
+                    <p>Close this tab. Go back to what wasn't working.</p>
+                    <p>Watch as your competitors discover this page and arm themselves.</p>
+                    <p>Struggle with rising ad costs and stagnant content.</p>
+                    <p>Explain to your clients why your videos look amateur.</p>
+                    <p><strong>End Result: Irrelevance. Margin erosion. Being left behind.</strong></p>
+                </div>
+                <div class="path path-good">
+                    <h3 class="path-title">PATH B: ARM YOURSELF.</h3>
+                    <p>Secure your Founding Member access below.</p>
+                    <p>Deploy the most aggressive content weapon available.</p>
+                    <p>Flood your channels with hyper-realistic, converting video.</p>
+                    <p>Watch as clients and customers respond like never before.</p>
+                    <p><strong>End Result: Market dominance. Predictable growth. An unfair advantage.</strong></p>
                 </div>
             </div>
 
-            <div class="pricing-grid">
-                <!-- TIER 1 -->
-                <div class="pricing-card">
-                    <h3>FOUNDING MEMBER 100</h3>
-                    <div class="price">$197<span></span></div>
-                    <p><strong>LIFETIME ACCESS</strong> at a one‑time fee.</p>
-                    <ul class="pricing-features">
-                        <li>Unlock the full Kairah Studio platform</li>
-                        <li>Generate unlimited 6‑second videos</li>
-                        <li>Priority support & feature voting</li>
-                        <li>Founding Member badge & status</li>
-                        <li><strong>ONLY 100 SPOTS AVAILABLE</strong></li>
-                    </ul>
-                    <a href="https://www.jvzoo.com/b/0/429715/6" class="btn-jvzoo">CLAIM YOUR SPOT</a>
-                </div>
-                <!-- TIER 2 (POPULAR) -->
-                <div class="pricing-card popular">
-                    <div class="popular-badge">MOST AGGRESSIVE V
+            <!-- RISK REVERSAL -->
+            <div style="background:rgba(255,215,0,0.1); padding: 30px; border-radius:15px; margin: 40px 0;">
+                <h3><i class="fas fa-shield-alt"></i> YOUR 30-DAY "DOMINATION OR REFUND" GUARANTEE</h3>
+                <p>We are so confident this will become the core of your marketing engine that we offer an ironclad guarantee:</p>
+                <p><strong>Use Kairah Studio for 30 days after launch. If it does not become the most powerful tool in your arsenal, if it does not give you a clear edge, simply email us. We will refund every single penny. No questions, no hassles.</strong></p>
+                <p>Your risk is zero. Your potential upside is unlimited.</p>
+            </div>
+
+            <!-- FINAL BUTTON - YOUR JVZOO BUTTON -->
+            <div style="text-align:center;">
+                <h3>THE CHOICE IS NOW YOURS.</h3>
+                <a href="https://www.jvzoo.com/b/0/429715/6" class="btn-kairah">YES, GIVE ME THE WEAPON</a>
+                <p style="color: var(--color-blush); margin-top: 20px;"><i class="fas fa-exclamation-circle"></i> <strong>WARN
